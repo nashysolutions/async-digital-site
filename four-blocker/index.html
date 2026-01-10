@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Four Blocker — Async Digital</title>
+  <meta name="description" content="Four Blocker: AI-assisted four-quadrant status updates." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="wrap">
+    <a class="back" href="/">← Async Digital</a>
+    <h1 class="h1">Four Blocker</h1>
+    <p class="tagline">AI-assisted four-quadrant updates for your day or week.</p>
+
+    <div class="cta">
+      <a class="button" href="#">App Store (coming soon)</a>
+      <a class="link" href="https://youtu.be/V0HjPnEbW00" target="_blank" rel="noreferrer">Demo video</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>What it does</h2>
+      <ul>
+        <li>Turns rough notes into a structured four-quadrant summary</li>
+        <li>Exports clean updates you can share</li>
+        <li>Designed for clarity and speed</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Async Digital</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

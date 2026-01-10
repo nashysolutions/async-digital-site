@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Async Digital</title>
+  <meta name="description" content="Software engineering across Apple platforms." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="wrap">
+    <img class="logo" src="/assets/logo.png" alt="Async Digital" />
+    <p class="tagline">Software engineering across Apple platforms.</p>
+
+    <div class="cta">
+      <a class="button" href="mailto:contact@async-digital.com">Contact</a>
+      <a class="link" href="/four-blocker/">Four Blocker</a>
+      <a class="link" href="https://github.com/nashysolutions" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>What I build</h2>
+      <ul>
+        <li>Native development for iOS, iPadOS, watchOS, and tvOS</li>
+        <li>Frameworks, libraries, and SDK-style integrations</li>
+        <li>Architecture, performance, reliability, and tooling</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Async Digital</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
