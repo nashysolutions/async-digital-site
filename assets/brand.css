@@ -1,0 +1,46 @@
+/*
+ * Async Digital — Brand tokens
+ *
+ * Single source of truth for brand-level CSS custom properties consumed
+ * by every stylesheet in this repo. Source palette is documented in
+ * brand/colour.md.
+ *
+ * Scope: colour tokens only. Typography and spacing tokens will be added
+ * when #20 (typography) ships. Do NOT ship component-level styles here —
+ * only design tokens.
+ *
+ * Tokens (use these; don't reach for hardcoded hex):
+ *   Brand
+ *     --primary   Deep brick. Buttons, accent bars, logo mark.
+ *     --accent    Charcoal navy. Headings and secondary emphasis.
+ *
+ *   Neutrals
+ *     --bg        Page background.
+ *     --card      Surface for cards and tiles.
+ *     --border    Hairline borders and separators.
+ *     --text      Body and heading text.
+ *     --muted     Supporting / secondary text.
+ *
+ *   Status
+ *     --success   Success indicators.
+ *     --warning   Warning indicators. Use dark text (var(--text)) on top.
+ *     --error     Error indicators.
+ */
+
+:root {
+  /* Brand */
+  --primary: #8B3A2A;
+  --accent:  #2A3A4A;
+
+  /* Neutrals */
+  --bg:      #FDFBF7;
+  --card:    #F8F5EE;
+  --border:  #E8E4DC;
+  --text:    #1F1C18;
+  --muted:   #6B6560;
+
+  /* Status */
+  --success: #3E7A4A;
+  --warning: #C48B2C;
+  --error:   #CC2222;
+}

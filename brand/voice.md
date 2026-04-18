@@ -21,7 +21,7 @@ Dental clinic owners, practice managers, and receptionists. Busy, non-technical,
 Three examples, lifted straight from the current site and voice.
 
 **Homepage headline**
-> Stop losing patients to missed calls.
+> Stop losing patients to missed calls
 
 **Supporting copy**
 > We help dental clinics follow up with every missed caller automatically, so no enquiry falls through the cracks, even when the phone rings off the hook.
@@ -73,7 +73,7 @@ Voice stays the same. Tone moves up and down the dial depending on who's reading
 
 | Context | Tone | Example opener |
 |---|---|---|
-| Homepage / marketing | Confident, direct | "Stop losing patients to missed calls." |
+| Homepage / marketing | Confident, direct | "Stop losing patients to missed calls" |
 | Cold outreach | Warm, brief, not pushy | "Quick one. We build..." |
 | Onboarding / setup docs | Patient, step-by-step | "Here's what happens next." |
 | Error messages | Apologetic, specific, actionable | "We couldn't send that message. The clinic's number looks wrong. Please check and try again." |
@@ -85,6 +85,7 @@ If you're unsure, **read it aloud**. If it sounds like a brochure, rewrite it. I
 ## Punctuation and formatting
 
 - **Sentence case** for headings, buttons, and menu items. Not Title Case.
+- **Hero headlines (H1).** No terminal punctuation. A hero headline is a title, not a sentence. "Stop losing patients to missed calls" — not "…calls." This only applies to the H1 on landing pages; supporting copy below it still takes full stops as normal.
 - **Oxford comma.** Yes. `clinic, patient, and receptionist.`
 - **Em dashes.** No. Prefer a full stop, a comma, or a pair of parentheses. Em dashes are a reliable tell that an LLM wrote the draft.
 - **Exclamation marks.** No. Ever. Not even one.

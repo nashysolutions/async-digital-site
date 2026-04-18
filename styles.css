@@ -1,14 +1,4 @@
-:root {
-  --text: #0b0b0c;
-  --muted: #5a5f69;
-  --bg: #ffffff;
-  --card: #f6f7f9;
-  --border: rgba(0,0,0,0.08);
-
-  /* Brand accent (matches your logo vibe) */
-  --accent: #0aa5ff;
-  --accent-2: #0077ff;
-}
+/* Brand tokens (--primary, --accent, --bg, --card, --border, --text, --muted, --success, --warning, --error) are defined in /assets/brand.css. */
 
 html, body { height: 100%; }
 
@@ -80,7 +70,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  background: #111;
+  background: var(--primary);
 }
 
 .button:hover {
@@ -90,7 +80,7 @@ body {
 }
 
 .button:focus-visible {
-  outline: 3px solid rgba(10,165,255,0.35);
+  outline: 3px solid color-mix(in srgb, var(--primary) 35%, transparent);
   outline-offset: 3px;
 }
 
@@ -146,11 +136,11 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3px;          /* was 4px */
-  width: 52px;          /* was 56px */
+  height: 3px;
+  width: 52px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  opacity: 0.75;        /* was 0.9 */
+  background: var(--primary);
+  opacity: 0.85;
 }
 
 .grid {
