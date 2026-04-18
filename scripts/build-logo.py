@@ -125,51 +125,61 @@ def favicon_mark_svg() -> str:
     return bars_svg("0 0 100 100", FAVICON_BARS)
 
 
+def _font_metrics(font: TTFont, target_cap: float) -> tuple[float, float, float]:
+    """Return (scale, ascent, descent) in lockup units for a given cap height.
+
+    ascent = distance from baseline to top of accent-less glyphs (hhea ascender)
+    descent = distance from baseline downward (positive number in lockup units)
+    """
+    cap_units = font["OS/2"].sCapHeight or font["hhea"].ascender
+    scale = target_cap / cap_units
+    ascent = font["hhea"].ascender * scale
+    descent = -font["hhea"].descender * scale
+    return scale, ascent, descent
+
+
 def horizontal_svg(font: TTFont) -> str:
     """Mark on the left, two-line wordmark ('Async' over 'Digital') on the right.
 
     The two-line wordmark gives the lockup a ~square text block that balances the
     square mark, matching the shape of the current Logo.jpg.
     """
-    upem_ascender = font["OS/2"].sCapHeight or font["hhea"].ascender
-    upem_descender = font["hhea"].descender
-    font_height = upem_ascender - upem_descender
-
     run_async = build_run(font, "Async")
     run_digital = build_run(font, "Digital")
     widest_advance = max(run_async.advance, run_digital.advance)
 
-    # Target layout: mark is 100 wide in logical units; render wordmark scaled so two
-    # lines together roughly match the mark's 100-unit height.
-    # Two lines at cap height ~42 with 16 leading → total ~100.
     target_line_cap = 42
-    scale = target_line_cap / (font["OS/2"].sCapHeight or 1)
-    line_h = 50  # baseline-to-baseline in lockup units
+    scale, ascent, descent = _font_metrics(font, target_line_cap)
+    line_h = 50  # baseline-to-baseline
 
     wordmark_width = widest_advance * scale
     gap = 24
-
     total_width = 100 + gap + wordmark_width
-    vb_h = 100
 
-    # Baseline of first line sits so the cap-box is centred in the top half.
-    baseline_y1 = 10 + target_line_cap  # y of baseline line 1
+    # Pack the two lines so the top of the first glyph sits at y=0 and the descender
+    # of the second line sits at y = ascent + line_h + descent. Then give the mark the
+    # same vertical centre as the wordmark block.
+    baseline_y1 = ascent
     baseline_y2 = baseline_y1 + line_h
+    wordmark_h = baseline_y2 + descent
+    vb_h = max(100.0, wordmark_h)
+    mark_y_offset = (vb_h - 100) / 2
+    wordmark_y_offset = (vb_h - wordmark_h) / 2
 
     def flipped(run: GlyphRun, baseline_y: float) -> str:
         paths = "".join(run.paths)
         return (
-            f'<g transform="translate({100 + gap},{baseline_y}) scale({scale},-{scale})" '
-            f'fill="currentColor">{paths}</g>'
+            f'<g transform="translate({100 + gap},{wordmark_y_offset + baseline_y:.2f}) '
+            f'scale({scale:.4f},-{scale:.4f})" fill="currentColor">{paths}</g>'
         )
 
     bars_rects = "\n  ".join(
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{h / 2}"/>'
+        f'<rect x="{x}" y="{y + mark_y_offset:.2f}" width="{w}" height="{h}" rx="{h / 2}"/>'
         for (x, y, w, h) in BARS
     )
 
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_width:.2f} {vb_h}" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_width:.2f} {vb_h:.2f}" '
         f'color="{PRIMARY}" role="img" aria-label="Async Digital">\n'
         f'  <g fill="currentColor">\n  {bars_rects}\n  </g>\n'
         f'  {flipped(run_async, baseline_y1)}\n'
@@ -181,24 +191,25 @@ def horizontal_svg(font: TTFont) -> str:
 def stacked_svg(font: TTFont) -> str:
     """Mark on top, single-line 'Async Digital' below, both horizontally centred."""
     run = build_run(font, "Async Digital")
-    target_cap = 26  # smaller cap so wordmark fits under square mark
-    scale = target_cap / (font["OS/2"].sCapHeight or 1)
+    target_cap = 26
+    scale, ascent, descent = _font_metrics(font, target_cap)
     wordmark_w = run.advance * scale
     gap = 18
     mark_w = 100
+
     vb_w = max(mark_w, wordmark_w)
     mark_x = (vb_w - mark_w) / 2
     wordmark_x = (vb_w - wordmark_w) / 2
-    baseline_y = 100 + gap + target_cap
-    vb_h = baseline_y + 4  # a hair of descender space
+    baseline_y = 100 + gap + ascent
+    vb_h = baseline_y + descent
 
     bars_rects = "\n  ".join(
         f'<rect x="{x + mark_x:.2f}" y="{y}" width="{w}" height="{h}" rx="{h / 2}"/>'
         for (x, y, w, h) in BARS
     )
     wordmark = (
-        f'<g transform="translate({wordmark_x:.2f},{baseline_y}) scale({scale:.4f},-{scale:.4f})" '
-        f'fill="currentColor">{"".join(run.paths)}</g>'
+        f'<g transform="translate({wordmark_x:.2f},{baseline_y:.2f}) '
+        f'scale({scale:.4f},-{scale:.4f})" fill="currentColor">{"".join(run.paths)}</g>'
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {vb_w:.2f} {vb_h:.2f}" '
