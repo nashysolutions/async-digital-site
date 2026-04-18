@@ -248,10 +248,35 @@ body {
 /* ---------- Footer ---------- */
 
 .footer {
-  margin-top: 40px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: var(--size-small);
+  line-height: var(--lh-normal);
   text-align: center;
+}
+
+.footer-primary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px 12px;
+  color: var(--text);
+}
+
+.footer-legal {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.footer-sep {
+  color: var(--border);
+}
+
+.footer-nowrap {
+  white-space: nowrap;
 }
 
 .footer-link {
