@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" color="#8B3A2A" role="img" aria-label="Async Digital">
+  <g fill="currentColor">
+  <rect x="5" y="10" width="60" height="10" rx="5.0"/>
+  <rect x="20" y="24" width="75" height="10" rx="5.0"/>
+  <rect x="0" y="38" width="45" height="10" rx="5.0"/>
+  <rect x="15" y="52" width="80" height="10" rx="5.0"/>
+  <rect x="30" y="66" width="35" height="10" rx="5.0"/>
+  <rect x="10" y="80" width="65" height="10" rx="5.0"/>
+  </g>
+</svg>
