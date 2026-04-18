@@ -27,7 +27,7 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 16px;
+  padding-top: clamp(24px, 4vw, 56px);
   padding-bottom: 22px;
 }
 
