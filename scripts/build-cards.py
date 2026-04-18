@@ -157,7 +157,8 @@ def card_wrapper(inner: str) -> str:
 
 
 def front_svg(font: TTFont, person: dict) -> str:
-    """Left-aligned front: name big, then GDC / email / phone in Inter Regular."""
+    """Left-aligned front: name big, then GDC / email / phone in Inter Regular,
+    with a small symbol mark tagged in the top-right corner."""
     # Cap sizes in mm
     name_cap = 4.5
     meta_cap = 2.5
@@ -185,11 +186,25 @@ def front_svg(font: TTFont, person: dict) -> str:
             f'{"".join(run.paths)}</g>'
         )
 
+    # Top-right symbol tag — small mark so the brand is visible on the contact side,
+    # not just the flip side. Right-aligned at the same 6mm safe margin.
+    mark_w = 12
+    mark_x = TRIM_W - 6 - mark_w
+    mark_y = 6
+    mark_scale = mark_w / 100
+    mark_rects = "\n    ".join(
+        f'<rect x="{x * mark_scale + mark_x:.3f}" y="{y * mark_scale + mark_y:.3f}" '
+        f'width="{w * mark_scale:.3f}" height="{h * mark_scale:.3f}" '
+        f'rx="{(h * mark_scale) / 2:.3f}"/>'
+        for (x, y, w, h) in BARS
+    )
+
     inner = (
         f'  {render(name_run, baseline_name)}\n'
         f'  {render(gdc_run, baseline_gdc)}\n'
         f'  {render(email_run, baseline_email)}\n'
-        f'  {render(phone_run, baseline_phone)}'
+        f'  {render(phone_run, baseline_phone)}\n'
+        f'  <g fill="{PRIMARY}">\n    {mark_rects}\n  </g>'
     )
     return card_wrapper(inner)
 
