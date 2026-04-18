@@ -1,4 +1,4 @@
-/* Brand tokens (--primary, --accent, --bg, --card, --border, --text, --muted, --success, --warning, --error) are defined in /assets/brand.css. */
+/* Brand tokens (colour, typography) are defined in /assets/brand.css. */
 
 html, body { height: 100%; }
 
@@ -6,7 +6,10 @@ html, body { height: 100%; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans);
+  font-size: var(--size-body);
+  line-height: var(--lh-relaxed);
+  font-weight: var(--weight-regular);
   color: var(--text);
   background: var(--bg);
   min-height: 100%;
@@ -38,19 +41,24 @@ body {
   margin: 0 auto;
 }
 
+.headline,
+.h1 {
+  font-size: var(--size-h1);
+  line-height: var(--lh-tight);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+}
+
 .headline {
-  font-size: 44px;
-  line-height: 1.12;
   margin: 14px auto 0;
   max-width: 30ch;
-  letter-spacing: -0.02em;
 }
 
 .tagline {
   margin: 16px auto 0;
-  font-size: 19px;
+  font-size: var(--size-intro);
+  line-height: var(--lh-relaxed);
   color: var(--muted);
-  line-height: 1.55;
   max-width: 68ch;
 }
 
@@ -105,7 +113,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   color: var(--muted);
-  font-size: 14px;
+  font-size: var(--size-small);
 }
 
 .signals li {
@@ -124,7 +132,9 @@ body {
 
 .section h2 {
   margin: 0 0 14px;
-  font-size: 20px;
+  font-size: var(--size-h2);
+  line-height: var(--lh-snug);
+  font-weight: var(--weight-medium);
   letter-spacing: -0.01em;
   position: relative;
   display: inline-block;
@@ -169,20 +179,22 @@ body {
 .card h3,
 .tile h3 {
   margin: 0 0 10px;
-  font-size: 16px;
+  font-size: var(--size-h3);
+  line-height: var(--lh-normal);
+  font-weight: var(--weight-medium);
 }
 
 .card ul {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: var(--lh-loose);
 }
 
 .tile p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: var(--lh-relaxed);
 }
 
 .tile p + p { margin-top: 10px; }
@@ -199,7 +211,7 @@ body {
 }
 
 .meta {
-  font-size: 14px;
+  font-size: var(--size-small);
 }
 
 /* ---------- Process ---------- */
@@ -222,13 +234,15 @@ body {
 
 .step h3 {
   margin: 0 0 8px;
-  font-size: 16px;
+  font-size: var(--size-h3);
+  line-height: var(--lh-normal);
+  font-weight: var(--weight-medium);
 }
 
 .step p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: var(--lh-relaxed);
 }
 
 /* ---------- Footer ---------- */
@@ -236,7 +250,7 @@ body {
 .footer {
   margin-top: 40px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: var(--size-small);
   text-align: center;
 }
 
@@ -259,7 +273,6 @@ body {
   }
 
   .headline {
-    font-size: 36px;
     max-width: 100%;
   }
 
@@ -274,5 +287,4 @@ body {
 
 @media (max-width: 480px) {
   .cta { gap: 12px; }
-  .headline { font-size: 32px; }
 }

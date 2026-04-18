@@ -2,29 +2,46 @@
  * Async Digital — Brand tokens
  *
  * Single source of truth for brand-level CSS custom properties consumed
- * by every stylesheet in this repo. Source palette is documented in
- * brand/colour.md.
+ * by every stylesheet in this repo. Palette is documented in
+ * brand/colour.md; typography in brand/typography.md.
  *
- * Scope: colour tokens only. Typography and spacing tokens will be added
- * when #20 (typography) ships. Do NOT ship component-level styles here —
- * only design tokens.
+ * Do NOT ship component-level styles here — only design tokens.
  *
- * Tokens (use these; don't reach for hardcoded hex):
+ * Colour
  *   Brand
  *     --primary   Deep brick. Buttons, accent bars, logo mark.
  *     --accent    Charcoal navy. Headings and secondary emphasis.
- *
  *   Neutrals
  *     --bg        Page background.
  *     --card      Surface for cards and tiles.
  *     --border    Hairline borders and separators.
  *     --text      Body and heading text.
  *     --muted     Supporting / secondary text.
- *
  *   Status
  *     --success   Success indicators.
  *     --warning   Warning indicators. Use dark text (var(--text)) on top.
  *     --error     Error indicators.
+ *
+ * Typography
+ *   Families
+ *     --font-sans    Web system stack.
+ *   Sizes
+ *     --size-h1      Hero headline (responsive).
+ *     --size-h2      Section heading.
+ *     --size-h3      Card / tile heading.
+ *     --size-intro   Hero supporting paragraph.
+ *     --size-body    Default body text.
+ *     --size-small   Footer, meta, fine print.
+ *   Line heights
+ *     --lh-tight     1.12 — hero headline.
+ *     --lh-snug      1.3  — section headings.
+ *     --lh-normal    1.4  — tight prose.
+ *     --lh-relaxed   1.55 — body and intro.
+ *     --lh-loose     1.7  — dense bullet lists.
+ *   Weights
+ *     --weight-regular  400
+ *     --weight-medium   600
+ *     --weight-bold     700
  */
 
 :root {
@@ -43,4 +60,36 @@
   --success: #3E7A4A;
   --warning: #C48B2C;
   --error:   #CC2222;
+
+  /* Typography — families */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Typography — sizes */
+  --size-h1:    44px;
+  --size-h2:    20px;
+  --size-h3:    16px;
+  --size-intro: 19px;
+  --size-body:  16px;
+  --size-small: 14px;
+
+  /* Typography — line heights */
+  --lh-tight:   1.12;
+  --lh-snug:    1.3;
+  --lh-normal:  1.4;
+  --lh-relaxed: 1.55;
+  --lh-loose:   1.7;
+
+  /* Typography — weights */
+  --weight-regular: 400;
+  --weight-medium:  600;
+  --weight-bold:    700;
+}
+
+/* H1 steps down on narrower viewports so it stays within the measure. */
+@media (max-width: 900px) {
+  :root { --size-h1: 36px; }
+}
+
+@media (max-width: 480px) {
+  :root { --size-h1: 32px; }
 }
