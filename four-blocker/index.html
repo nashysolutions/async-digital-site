@@ -11,6 +11,7 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Async Digital" />
   <meta property="og:title" content="Four Blocker — Async Digital" />
   <meta property="og:description" content="Four Blocker: AI-assisted four-quadrant status updates." />
   <meta property="og:image" content="https://async-digital.com/assets/og-logo.jpg" />
@@ -74,6 +75,32 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://async-digital.com/#organization",
+    "name": "Async Digital",
+    "legalName": "Async Digital Ltd",
+    "url": "https://async-digital.com",
+    "logo": "https://async-digital.com/assets/logo.svg",
+    "description": "Workflow automations for dental clinics, starting with missed-call follow-up.",
+    "email": "h.nash1@async-digital.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "167-169 Great Portland Street",
+      "addressLocality": "London",
+      "postalCode": "W1W 5PF",
+      "addressCountry": "GB"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "Companies House",
+      "value": "16950485"
+    }
+  }
   </script>
 </body>
 </html>
