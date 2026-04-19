@@ -6,13 +6,14 @@ The goal: a non-designer can produce a leaflet, business card, or email signatur
 
 ## The foundations
 
-Three files under `brand/` hold the decisions. Everything else is applied work.
+Four files under `brand/` hold the decisions. Everything else is applied work.
 
 - **Colour**: [`brand/colour.md`](brand/colour.md). Two brand colours, warm neutrals, three status colours, contrast ratings for every pairing used on the site.
 - **Typography**: [`brand/typography.md`](brand/typography.md). System stack on the web, Inter in print, Arial in email. One type scale across all three.
 - **Voice and tone**: [`brand/voice.md`](brand/voice.md). How Async Digital writes. Prefer, avoid, and when in doubt.
+- **Positioning**: [`brand/positioning.md`](brand/positioning.md). How Audient sits next to Speed to Lead. What gets mentioned where, what doesn't.
 
-If you're editing copy, start at voice. If you're placing colour or type, start at colour or typography.
+If you're editing copy, start at voice — then check positioning if Audient might come up. If you're placing colour or type, start at colour or typography.
 
 ## Logo
 
