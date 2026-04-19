@@ -306,7 +306,11 @@ body {
   }
 
   .wrap {
-    padding: 40px 20px;
+    padding: 40px 24px;
+  }
+
+  .logo {
+    width: 85%;
   }
 }
 
