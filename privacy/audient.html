@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Privacy &mdash; Audient | Async Digital</title>
-  <meta name="description" content="Privacy policy for the Audient iOS app. On-device audio, transcripts, and search. How the data is handled, retained, and your rights." />
+  <meta name="description" content="Privacy policy for Audient, our macOS app for on-device audio capture, transcription, and search. How the data is handled, retained, and your rights." />
 
   <link rel="canonical" href="https://async-digital.com/privacy/audient.html" />
   <link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/audient.html" />
@@ -15,13 +15,13 @@
   <meta property="og:site_name" content="Async Digital" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:title" content="Privacy &mdash; Audient | Async Digital" />
-  <meta property="og:description" content="Privacy policy for the Audient iOS app." />
+  <meta property="og:description" content="Privacy policy for Audient, our macOS app for on-device audio capture, transcription, and search." />
   <meta property="og:image" content="https://async-digital.com/assets/og-logo.jpg" />
   <meta property="og:url" content="https://async-digital.com/privacy/audient.html" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy &mdash; Audient | Async Digital" />
-  <meta name="twitter:description" content="Privacy policy for the Audient iOS app." />
+  <meta name="twitter:description" content="Privacy policy for Audient, our macOS app." />
   <meta name="twitter:image" content="https://async-digital.com/assets/og-logo.jpg" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="/assets/brand.css" />
   <link rel="stylesheet" href="/styles.css" />
 
-  <script src="/assets/brand.js?v=2026-04-17" defer></script>
+  <script src="/assets/brand.js?v=2026-04-21" defer></script>
 </head>
 
 <body>
@@ -43,21 +43,21 @@
       <a lang="cy" href="/privacy/audient.cy.html">Cymraeg</a>
     </p>
     <h1 class="h1">Privacy &mdash; Audient</h1>
-    <p class="tagline">Audient captures and transcribes audio on your device. This section explains exactly what happens to that data, what we see (almost nothing), and how to exercise your rights.</p>
+    <p class="tagline">Audient captures and transcribes audio on your Mac. This section explains exactly what happens to that data, what we see (almost nothing), and how to exercise your rights.</p>
   </header>
 
   <main class="wrap" role="main">
 
     <section class="section prose" aria-labelledby="scope">
       <h2 id="scope">Scope</h2>
-      <p>This section covers <strong>Audient for iOS</strong>. It does not cover the async-digital.com marketing site or any other Async Digital product &mdash; those have their own sections on the <a href="/privacy/">privacy hub</a>.</p>
+      <p>This section covers <strong>Audient for macOS</strong>. It does not cover the async-digital.com marketing site or any other Async Digital product &mdash; those have their own sections on the <a href="/privacy/">privacy hub</a>.</p>
       <p><strong>Status.</strong> Audient is in development and is not yet available on the App Store. This policy describes the app's data handling as it currently stands, and is the URL that will accompany Audient's App Store submission when that happens. It is published ahead of submission so it is in place at the moment of review.</p>
       <p>The description below matches the current build of Audient. If a future release changes how data is handled &mdash; for example, by adding in-app purchases, an account, or a feature that needs the network &mdash; we will update this section and record the change in the register of updates <strong>before</strong> that version ships.</p>
     </section>
 
     <section class="section prose" aria-labelledby="headline">
       <h2 id="headline">The short version</h2>
-      <p>Audient runs on your device. Your recordings, transcripts, and the data derived from them stay on your device. We do not receive them, and no third-party service receives them in the course of normal use.</p>
+      <p>Audient runs on your Mac. Your recordings, transcripts, and the data derived from them stay on your Mac. We do not receive them, and no third-party service receives them in the course of normal use.</p>
       <p>The rest of this section goes through that in detail, because a privacy policy that just says &ldquo;we collect nothing&rdquo; is not actually useful.</p>
     </section>
 
@@ -65,12 +65,12 @@
       <h2 id="on-device">What happens on your device</h2>
       <p>Audient does four things with your data, all locally:</p>
       <ul>
-        <li><strong>Audio capture.</strong> When you record, the audio is written to the app's storage on your device. It is not uploaded anywhere.</li>
-        <li><strong>Transcription.</strong> Audio is transcribed using a speech recognition model (OpenAI Whisper) that runs entirely on your device. No audio, no transcript, and no intermediate artefact is sent to any remote server for transcription. Whisper is used as an on-device model &mdash; we do not call the OpenAI API.</li>
-        <li><strong>Semantic search.</strong> Transcripts are turned into numerical embeddings using a small language model bundled inside the app (a MiniLM-family sentence-embedding model). The model runs on your device. Your transcript text is not transmitted.</li>
-        <li><strong>Storage and retrieval.</strong> Recordings, transcripts, embeddings, and search indexes are kept in the app's sandbox on your device &mdash; specifically, under Application Support and related locations inside Audient's own storage area. Other apps cannot reach into that storage; iOS isolates it from the rest of the system.</li>
+        <li><strong>Audio capture.</strong> When you record, the audio is written to Audient's storage on your Mac. It is not uploaded anywhere.</li>
+        <li><strong>Transcription.</strong> Audio is transcribed using a speech recognition model (OpenAI Whisper, run locally via WhisperKit) that runs entirely on your Mac. No audio, no transcript, and no intermediate artefact is sent to any remote server for transcription. Whisper is used as an on-device model &mdash; we do not call the OpenAI API.</li>
+        <li><strong>Semantic search.</strong> Transcripts are turned into numerical embeddings using a small language model bundled inside the app (the all-MiniLM-L6-v2 sentence-embedding model). The model runs on your Mac. Your transcript text is not transmitted.</li>
+        <li><strong>Storage and retrieval.</strong> Recordings, transcripts, embeddings, and search indexes are kept under <code>~/Library/Application Support/Audient/</code> on your Mac &mdash; a per-user location inside your macOS account. Other users on the same Mac do not see your Audient data unless they share your macOS user account.</li>
       </ul>
-      <p>The iPhone's microphone permission is requested when you first start a recording. If you revoke it from iOS Settings, Audient can no longer record, but any recordings you already made remain accessible on your device until you delete them.</p>
+      <p>macOS asks for microphone permission the first time you start a recording. If you revoke it from <em>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</em>, Audient can no longer record, but any recordings you already made remain accessible on your Mac until you delete them.</p>
     </section>
 
     <section class="section prose" aria-labelledby="network">
@@ -81,18 +81,18 @@
         <li><strong>No calls to our servers.</strong> Async Digital does not operate a backend that Audient talks to for user content, transcription, search, or analytics.</li>
         <li><strong>No calls to third-party AI providers.</strong> No part of the app calls OpenAI, Anthropic, Google, or any other cloud AI service with your audio, transcripts, or derived data. The on-device Whisper and embedding models we rely on are local only.</li>
       </ul>
-      <p>iOS itself may make standard network requests on the device's behalf (for example, to check app integrity, deliver push notifications, or report crashes if you have opted in &mdash; see <em>Apple's diagnostic sharing</em> below). Those are operating-system-level requests, not things Audient initiates.</p>
+      <p>macOS itself may make standard network requests on your Mac's behalf (for example, to verify the app's notarisation with Apple at launch, deliver push notifications if you have enabled them, or report crashes if you have opted in &mdash; see <em>Apple's diagnostic sharing</em> below). Those are operating-system-level requests, not things Audient initiates.</p>
     </section>
 
     <section class="section prose" aria-labelledby="apple-diagnostics">
       <h2 id="apple-diagnostics">Apple's diagnostic sharing</h2>
-      <p>Apple offers a system-level setting at <em>Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements &rarr; Share with App Developers</em>. If <em>you</em> turn it on, Apple may share anonymised crash, energy, and performance reports about Audient with us via App Store Connect.</p>
+      <p>Apple offers a system-level setting at <em>System Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements &rarr; Share with App Developers</em>. If <em>you</em> turn it on, Apple may share anonymised crash, energy, and performance reports about Audient with us via App Store Connect.</p>
       <ul>
-        <li>This is controlled by you in iOS Settings. It is <strong>off by default for many users</strong> and is not something Audient can enable or bypass.</li>
+        <li>This is controlled by you in System Settings. It is <strong>off by default for many users</strong> and is not something Audient can enable or bypass.</li>
         <li>Apple aggregates and strips the reports before we see them. We do not receive your audio, transcripts, account identifiers, or content.</li>
         <li>What we do receive is aggregate crash and performance data, scoped to Audient. We use it to find and fix bugs.</li>
       </ul>
-      <p>You can switch this off at any time from iOS Settings, and it takes effect immediately.</p>
+      <p>You can switch this off at any time from System Settings, and it takes effect immediately.</p>
     </section>
 
     <section class="section prose" aria-labelledby="subscriptions">
@@ -103,32 +103,32 @@
 
     <section class="section prose" aria-labelledby="retention">
       <h2 id="retention">Retention and deletion</h2>
-      <p>Because everything is on your device, retention is primarily in your hands:</p>
+      <p>Because everything is on your Mac, retention is primarily in your hands:</p>
       <ul>
         <li><strong>You can delete a recording or transcript</strong> from within Audient at any time. Deletion removes the recording, its transcript, and any derived embeddings for that item from the app's storage.</li>
-        <li><strong>Deleting Audient</strong> from your iPhone removes the app's sandbox, including recordings, transcripts, embeddings, and caches in Application Support.</li>
-        <li><strong>&ldquo;Offload App&rdquo;</strong> (iOS Settings &rarr; General &rarr; iPhone Storage &rarr; Audient) removes the app binary but preserves its documents and data so you can reinstall without losing anything. If you want to wipe the data as well, choose <em>Delete App</em> instead of <em>Offload App</em>.</li>
-        <li><strong>iCloud backup.</strong> If you have iCloud Backup on, iOS may include Audient's data in that backup. That backup is encrypted and controlled by Apple under your iCloud account, not by us. See <a href="https://support.apple.com/en-gb/HT202303" rel="noreferrer">Apple's iCloud data security overview</a> for how iCloud backups are handled.</li>
+        <li><strong>Deleting the app.</strong> Moving Audient from <code>/Applications</code> to the Trash removes the application bundle but, by macOS convention, does <strong>not</strong> automatically remove your Audient data. Your recordings, transcripts, embeddings, and caches live under <code>~/Library/Application Support/Audient/</code>. To remove all locally stored data, delete that folder in Finder in addition to moving the app to the Trash. We are committed to adding an in-app &ldquo;Erase all data&rdquo; option before Audient's general release; this section will be amended and added to the register of updates when that ships.</li>
+        <li><strong>No iCloud sync.</strong> Audient does not declare iCloud entitlements and does not store your content in iCloud Drive or CloudKit. Your data stays on the Mac that created it, under your macOS user account.</li>
+        <li><strong>Time Machine and other local backups.</strong> If you have Time Machine or another local backup tool configured, Audient's data may be included in those backups. Those backups are controlled by you under your macOS account and are not accessible to us.</li>
       </ul>
-      <p>We do not hold a copy of your recordings or transcripts anywhere, so we cannot delete them for you &mdash; but we also cannot accidentally leak or retain them. Deletion is controlled by you and by iOS.</p>
+      <p>We do not hold a copy of your recordings or transcripts anywhere, so we cannot delete them for you &mdash; but we also cannot accidentally leak or retain them. Deletion is controlled by you and by macOS.</p>
     </section>
 
     <section class="section prose" aria-labelledby="categories">
       <h2 id="categories">Categories of personal data</h2>
-      <p>Personal data that Audient handles on your device:</p>
+      <p>Personal data that Audient handles on your Mac:</p>
       <ul>
         <li>Audio recordings you create (which may contain your voice and the voices of other people in the recording environment).</li>
         <li>Transcripts derived from those recordings, which may contain the content of anything spoken during the recording.</li>
         <li>Embeddings and search indexes derived from those transcripts.</li>
         <li>Metadata such as recording timestamps, titles, and tags you add.</li>
       </ul>
-      <p>We do not collect account identifiers, device identifiers for advertising, contacts, calendars, photos, location, or any other category of personal data. Audient does not ask for those permissions and does not read them.</p>
+      <p>We do not collect account identifiers, device identifiers for advertising, contacts, calendars, photos, location, or any other category of personal data. Audient does not ask for those permissions and does not read them. The only system permission Audient asks for is microphone access, and only at the point you first start a recording.</p>
       <p><strong>Recording other people.</strong> If you record another person, you are the one controlling that recording. Whether you may lawfully record them depends on where you are, the context, and what you plan to do with the recording. We do not have sight of your recordings and cannot advise on specific cases; the responsibility for obtaining consent where required rests with you.</p>
     </section>
 
     <section class="section prose" aria-labelledby="purposes">
       <h2 id="purposes">Purposes and lawful basis</h2>
-      <p>For the on-device processing Audient performs, we do not act as a controller or processor of your content &mdash; the content never leaves your device and we cannot access it. You are in control of it.</p>
+      <p>For the on-device processing Audient performs, we do not act as a controller or processor of your content &mdash; the content never leaves your Mac and we cannot access it. You are in control of it.</p>
       <p>For the minimal data we may indirectly receive (aggregated crash and analytics reports via Apple, only where <em>you</em> have opted in to Apple's diagnostic sharing, and any email you send to our support address), we rely on legitimate interests (UK GDPR Art 6(1)(f)) &mdash; keeping the app working and responding to enquiries &mdash; balanced against the minimal impact on you.</p>
     </section>
 
@@ -137,14 +137,19 @@
       <p>Audient does not send your recordings, transcripts, embeddings, or search data to any recipient. There is no cloud backend that processes your content.</p>
       <p>Parties that are incidentally involved in Audient's operation:</p>
       <ul>
-        <li><strong>Apple Inc.</strong> distributes the app through the App Store, operates the iOS platform it runs on, and (if you have opted in) aggregates diagnostic reports on our behalf. Apple's handling of that data is governed by Apple's own privacy policy.</li>
+        <li><strong>Apple Inc.</strong> distributes the app through the Mac App Store, operates the macOS platform it runs on, and (if you have opted in) aggregates diagnostic reports on our behalf. Apple's handling of that data is governed by Apple's own privacy policy.</li>
       </ul>
       <p>We do not use third-party AI providers (OpenAI's API, Anthropic, Google, etc.) for any Audient feature. The on-device Whisper and embedding models are software components bundled inside the app, not services that receive your data.</p>
     </section>
 
+    <section class="section prose" aria-labelledby="distribution">
+      <h2 id="distribution">Where Audient is distributed</h2>
+      <p>Audient is sold on the Mac App Store in every country where Apple makes the Mac App Store available. Because Audient does not transmit your content or identifiers anywhere &mdash; nothing leaves your Mac during normal use &mdash; worldwide distribution does not create cross-border transfers of your personal data within the meaning of UK GDPR. You download the app from Apple, and the app then operates locally on your machine.</p>
+    </section>
+
     <section class="section prose" aria-labelledby="transfers">
       <h2 id="transfers">International transfers</h2>
-      <p>Because your content stays on your device, no international transfers of that content arise from Audient's normal operation. Standard Apple App Store and iOS operations may involve processing by Apple in the United States under Apple's own safeguards.</p>
+      <p>Because your content stays on your Mac, no international transfers of that content arise from Audient's normal operation. Standard Apple Mac App Store and macOS operations may involve processing by Apple in the United States under Apple's own safeguards.</p>
     </section>
 
     <section class="section prose" aria-labelledby="automated">
@@ -154,7 +159,7 @@
 
     <section class="section prose" aria-labelledby="children">
       <h2 id="children">Use by children</h2>
-      <p>Audient is not directed at children under 13. If a child uses the app on a family-managed Apple ID, all the same on-device-only handling described in this section applies.</p>
+      <p>Audient is not directed at children under 13, and we do not knowingly collect personal data from children under 13 &mdash; we do not knowingly collect personal data from anyone. If a child uses Audient on a shared or family-managed Mac, all the same on-device-only handling described in this section applies.</p>
     </section>
 
     <section class="section prose" aria-labelledby="who-we-are">
@@ -164,7 +169,7 @@
         <strong>Async Digital Ltd</strong><br />
         167&ndash;169 Great Portland Street, London W1W 5PF, United Kingdom<br />
         Registered in England &amp; Wales, company number 16950485<br />
-        Contact: <a data-brand-mailto href="mailto:h.nash1@async-digital.com">h.nash1@async-digital.com</a>
+        Contact: <a data-brand-privacy-mailto href="mailto:r.nash1@async-digital.com">r.nash1@async-digital.com</a>
       </p>
       <p>If you are asking us to act on your data protection rights, email the address above with enough detail for us to identify the data in question (for example: which product, which email address you used to contact us, or what dates are involved).</p>
     </section>
@@ -180,7 +185,8 @@
         <li>object to our processing (right to object);</li>
         <li>ask for a copy of data you provided in a portable format (right to data portability), where applicable.</li>
       </ul>
-      <p>In practice, because Audient does not send your recordings or transcripts to us, most of these rights are exercised by you directly on your device &mdash; deleting a recording in the app removes it, and uninstalling Audient clears the sandbox. If you have emailed us (for example, for support) and want that correspondence deleted, email the address below and we will do so unless we have an overriding legal reason to retain it.</p>
+      <p>In practice, because Audient does not send your recordings or transcripts to us, most of these rights are exercised by you directly on your Mac &mdash; deleting a recording in the app removes it, and clearing <code>~/Library/Application Support/Audient/</code> removes all locally stored data. If you have emailed us (for example, for support) and want that correspondence deleted, email the address below and we will do so unless we have an overriding legal reason to retain it.</p>
+      <p>Async Digital is a UK company, so UK GDPR is our baseline. If you are in the EU, the EU GDPR gives you substantively the same rights; we apply them in the same way, and you may complain to your national data protection authority. If you are a California resident, we do not sell or share your personal data within the meaning of the CCPA or CPRA; because we do not collect personal data through the app (beyond email correspondence you choose to send us), the rights described above are what we will honour. We take the same approach in other jurisdictions: we apply the rights described here to anyone who asks, regardless of where they live.</p>
       <p>If you are not satisfied with how we have handled your data, you can complain to the UK Information Commissioner's Office at <a href="https://ico.org.uk/make-a-complaint/" rel="noreferrer">ico.org.uk/make-a-complaint</a> or on 0303 123 1113. We would appreciate the chance to address any concern first.</p>
     </section>
 
@@ -188,7 +194,7 @@
       <h2 id="updates">Register of updates</h2>
       <p><strong>Last updated:</strong> 2026-04-21</p>
       <ul>
-        <li><strong>2026-04-21</strong> &mdash; Section published ahead of Audient's App Store submission. The app is in development and not yet available.</li>
+        <li><strong>2026-04-21</strong> &mdash; Section published ahead of Audient's Mac App Store submission. Audient is a macOS app in development and not yet available. Distribution will cover every country in which the Mac App Store operates.</li>
       </ul>
     </section>
 
@@ -198,7 +204,7 @@
         <span class="footer-sep" aria-hidden="true">&middot;</span>
         <a class="footer-link" href="/privacy/">Privacy</a>
         <span class="footer-sep" aria-hidden="true">&middot;</span>
-        <a class="footer-link" data-brand-mailto href="mailto:h.nash1@async-digital.com">Contact</a>
+        <a class="footer-link" data-brand-privacy-mailto href="mailto:r.nash1@async-digital.com">Contact</a>
       </div>
       <div class="footer-legal">
         Registered in England &amp; Wales
