@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://async-digital.com/</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-21</lastmod>
   </url>
   <url>
     <loc>https://async-digital.com/four-blocker/</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://async-digital.com/privacy/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/index.cy.html" />
+  </url>
+  <url>
+    <loc>https://async-digital.com/privacy/site.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/site.html" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/site.cy.html" />
+  </url>
+  <url>
+    <loc>https://async-digital.com/privacy/audient.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/audient.html" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/audient.cy.html" />
   </url>
 </urlset>
