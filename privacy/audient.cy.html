@@ -55,9 +55,9 @@
 
     <section class="section prose" aria-labelledby="scope">
       <h2 id="scope">Cwmpas</h2>
-      <p>Mae'r adran hon yn cwmpasu <strong>Audient ar gyfer macOS</strong>. Nid yw'n cwmpasu'r safle marchnata async-digital.com nac unrhyw gynnyrch arall gan Async Digital &mdash; mae gan y rheini eu hadrannau eu hunain ar yr <a href="/privacy/index.cy.html">hyb preifatrwydd</a>. Mae Audient yn un o nifer o gynhyrchion gan Async Digital; ein prif wasanaeth masnachol, a welwch os ymwelwch ag <a href="/">async-digital.com</a>, yw Speed to Lead &mdash; dilyn galwadau a gollwyd ar gyfer clinigau deintyddol.</p>
+      <p>Mae'r adran hon yn cwmpasu <strong>Audient ar gyfer macOS</strong>. Nid yw'n cwmpasu'r safle marchnata async-digital.com nac unrhyw gynnyrch arall gan Async Digital &mdash; mae gan y rheini eu hadrannau eu hunain ar yr <a href="/privacy/index.cy.html">hyb preifatrwydd</a>.</p>
       <p><strong>Statws.</strong> Mae Audient yn cael ei ddatblygu ac nid yw ar gael eto ar yr App Store. Mae'r polisi hwn yn disgrifio sut y mae'r ap yn trin data fel y mae ar hyn o bryd, a dyma'r URL fydd yn mynd gyda chyflwyniad Audient i'r App Store pan ddigwydd hynny. Mae wedi'i gyhoeddi cyn y cyflwyniad er mwyn iddo fod yn ei le ar adeg yr adolygiad.</p>
-      <p>Mae'r disgrifiad isod yn cyfateb i'r gwaith adeiladu cyfredol o Audient. Os bydd fersiwn yn y dyfodol yn newid sut mae data'n cael ei drin &mdash; er enghraifft, trwy ychwanegu pryniannau o fewn yr ap, cyfrif, neu nodwedd sydd angen y rhwydwaith &mdash; byddwn yn diweddaru'r adran hon ac yn cofnodi'r newid yn y gofrestr diweddariadau <strong>cyn</strong> i'r fersiwn honno fynd yn fyw.</p>
+      <p>Mae'r disgrifiad isod yn cyfateb i'r gwaith adeiladu cyfredol o Audient. Os bydd fersiwn yn y dyfodol yn newid sut mae data'n cael ei drin, byddwn yn diweddaru'r adran hon ac yn cofnodi'r newid yn y gofrestr diweddariadau <strong>cyn</strong> i'r fersiwn honno fynd yn fyw.</p>
     </section>
 
     <section class="section prose" aria-labelledby="headline">
@@ -72,7 +72,7 @@
       <ul>
         <li><strong>Dal sain.</strong> Pan fyddwch yn recordio, ysgrifennir y sain i storfa Audient ar eich Mac. Nid yw'n cael ei lanlwytho i unlle.</li>
         <li><strong>Trawsgrifio.</strong> Caiff sain ei drawsgrifio gan ddefnyddio model adnabod llais (OpenAI Whisper, a redir yn lleol trwy WhisperKit) sy'n rhedeg yn gyfan gwbl ar eich Mac. Nid oes unrhyw sain, trawsgrifiad na chynnyrch canolradd yn cael ei anfon at unrhyw weinydd pell i'w drawsgrifio. Caiff Whisper ei ddefnyddio fel model ar y ddyfais &mdash; nid ydym yn galw ar API OpenAI.</li>
-        <li><strong>Chwilio semantig.</strong> Caiff trawsgrifiadau eu troi'n fewnosodiadau rhifol (embeddings) gan ddefnyddio model iaith bach wedi'i gynnwys yn yr ap (y model mewnosod brawddegau all-MiniLM-L6-v2). Mae'r model yn rhedeg ar eich Mac. Nid yw testun eich trawsgrifiad yn cael ei drosglwyddo.</li>
+        <li><strong>Chwilio semantig.</strong> Caiff trawsgrifiadau eu troi'n fewnosodiadau rhifol (embeddings) gan ddefnyddio model mewnosod brawddegau bach wedi'i gynnwys yn yr ap. Mae'r model yn rhedeg ar eich Mac. Nid yw testun eich trawsgrifiad yn cael ei drosglwyddo.</li>
         <li><strong>Storio ac adalw.</strong> Mae recordiadau, trawsgrifiadau, mewnosodiadau, a mynegeion chwilio yn cael eu cadw o dan <code>~/Library/Application Support/Audient/</code> ar eich Mac &mdash; lleoliad fesul-defnyddiwr y tu mewn i'ch cyfrif macOS. Nid yw defnyddwyr eraill ar yr un Mac yn gweld eich data Audient oni bai eu bod yn rhannu eich cyfrif defnyddiwr macOS.</li>
       </ul>
       <p>Mae macOS yn gofyn am ganiatâd meicroffon y tro cyntaf y byddwch yn cychwyn recordiad. Os byddwch yn tynnu'r caniatâd hwnnw o <em>Gosodiadau'r System &rarr; Preifatrwydd a Diogelwch &rarr; Meicroffon</em>, ni all Audient recordio mwyach, ond bydd unrhyw recordiadau rydych eisoes wedi'u creu yn parhau ar gael ar eich Mac nes i chi eu dileu.</p>
@@ -86,7 +86,7 @@
         <li><strong>Dim galwadau i'n gweinyddion.</strong> Nid yw Async Digital yn gweithredu gwasanaeth cefndir y mae Audient yn siarad ag ef am gynnwys defnyddiwr, trawsgrifio, chwilio na dadansoddeg.</li>
         <li><strong>Dim galwadau i ddarparwyr deallusrwydd artiffisial trydydd parti.</strong> Nid oes unrhyw ran o'r ap yn galw OpenAI, Anthropic, Google, nac unrhyw wasanaeth deallusrwydd artiffisial cwmwl arall gyda'ch sain, eich trawsgrifiadau, na data a ddeillir. Mae'r modelau Whisper a mewnosod rydym yn dibynnu arnynt ar y ddyfais yn unig.</li>
       </ul>
-      <p>Gall macOS ei hun wneud ceisiadau rhwydwaith safonol ar ran eich Mac (er enghraifft, i ddilysu notareiddiad yr ap gydag Apple wrth ei lansio, darparu hysbysiadau gwthio os ydych wedi'u galluogi, neu adrodd damweiniau os ydych wedi optio i mewn &mdash; gweler <em>rhannu diagnostig Apple</em> isod). Ceisiadau lefel system weithredu yw'r rheini, nid pethau y mae Audient yn eu cychwyn.</p>
+      <p>Gall macOS ei hun wneud ceisiadau rhwydwaith safonol ar ran eich Mac (er enghraifft, i ddilysu notareiddiad yr ap gydag Apple wrth ei lansio, neu i adrodd damweiniau os ydych wedi optio i mewn &mdash; gweler <em>rhannu diagnostig Apple</em> isod). Ceisiadau lefel system weithredu yw'r rheini, nid pethau y mae Audient yn eu cychwyn.</p>
     </section>
 
     <section class="section prose" aria-labelledby="apple-diagnostics">
@@ -103,7 +103,6 @@
     <section class="section prose" aria-labelledby="subscriptions">
       <h2 id="subscriptions">Tanysgrifiadau a phryniannau o fewn yr ap</h2>
       <p>Nid yw Audient yn cynnig pryniannau na thanysgrifiadau o fewn yr ap. Nid oes llif pryniant StoreKit yn cael ei gyflwyno, ac nid oes data derbynneb na hawlogaeth yn cael ei drin.</p>
-      <p>Pan fyddwn yn cyflwyno pryniannau o fewn yr ap, byddwn yn ychwanegu bloc penodol yma yn cwmpasu sut mae derbynebion StoreKit a chyflwr hawlogaeth yn cael eu trin, a byddwn yn cofnodi'r newid yn y gofrestr diweddariadau cyn i'r fersiwn gyda thanysgrifiadau fynd yn fyw. Nid ydym yn gweithredu dilysu derbynebion ochr-gweinydd &mdash; bydd unrhyw ddilysiad yn y dyfodol yn cael ei berfformio gan APIs StoreKit Apple ar y ddyfais, gydag Apple yn gweithredu fel y prosesydd taliadau.</p>
     </section>
 
     <section class="section prose" aria-labelledby="retention">
