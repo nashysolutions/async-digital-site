@@ -81,7 +81,7 @@
         <li><strong>No calls to our servers.</strong> Async Digital does not operate a backend that Audient talks to for user content, transcription, search, or analytics.</li>
         <li><strong>No calls to third-party AI providers.</strong> No part of the app calls OpenAI, Anthropic, Google, or any other cloud AI service with your audio, transcripts, or derived data. The on-device Whisper and embedding models we rely on are local only.</li>
       </ul>
-      <p>macOS itself may make standard network requests on your Mac's behalf (for example, to verify the app's notarisation with Apple at launch, deliver push notifications if you have enabled them, or report crashes if you have opted in &mdash; see <em>Apple's diagnostic sharing</em> below). Those are operating-system-level requests, not things Audient initiates.</p>
+      <p>macOS itself may make standard network requests on your Mac's behalf (for example, to verify the app's notarisation with Apple at launch, or to report crashes if you have opted in &mdash; see <em>Apple's diagnostic sharing</em> below). Those are operating-system-level requests, not things Audient initiates.</p>
     </section>
 
     <section class="section prose" aria-labelledby="apple-diagnostics">
@@ -98,7 +98,6 @@
     <section class="section prose" aria-labelledby="subscriptions">
       <h2 id="subscriptions">Subscriptions and in-app purchases</h2>
       <p>Audient does not offer in-app purchases or subscriptions. No StoreKit purchase flow is presented, and no receipt or entitlement data is handled.</p>
-      <p>When we introduce in-app purchases, we will add a dedicated block here covering how StoreKit receipts and entitlement state are handled, and we will record the change in the register of updates before the subscription-enabled version ships. We do not operate server-side receipt validation &mdash; any future validation will be performed by Apple's on-device StoreKit APIs, with Apple acting as the payment processor.</p>
     </section>
 
     <section class="section prose" aria-labelledby="retention">
