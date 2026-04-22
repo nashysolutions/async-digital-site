@@ -67,7 +67,7 @@
       <ul>
         <li><strong>Audio capture.</strong> When you record, the audio is written to Audient's storage on your Mac. It is not uploaded anywhere.</li>
         <li><strong>Transcription.</strong> Audio is transcribed using a speech recognition model (OpenAI Whisper, run locally via WhisperKit) that runs entirely on your Mac. No audio, no transcript, and no intermediate artefact is sent to any remote server for transcription. Whisper is used as an on-device model &mdash; we do not call the OpenAI API.</li>
-        <li><strong>Semantic search.</strong> Transcripts are turned into numerical embeddings using a small language model bundled inside the app (the all-MiniLM-L6-v2 sentence-embedding model). The model runs on your Mac. Your transcript text is not transmitted.</li>
+        <li><strong>Semantic search.</strong> Transcripts are turned into numerical embeddings using a small sentence-embedding model bundled inside the app. The model runs on your Mac. Your transcript text is not transmitted.</li>
         <li><strong>Storage and retrieval.</strong> Recordings, transcripts, embeddings, and search indexes are kept under <code>~/Library/Application Support/Audient/</code> on your Mac &mdash; a per-user location inside your macOS account. Other users on the same Mac do not see your Audient data unless they share your macOS user account.</li>
       </ul>
       <p>macOS asks for microphone permission the first time you start a recording. If you revoke it from <em>System Settings &rarr; Privacy &amp; Security &rarr; Microphone</em>, Audient can no longer record, but any recordings you already made remain accessible on your Mac until you delete them.</p>
