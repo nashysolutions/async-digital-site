@@ -4,8 +4,11 @@
 // links marked with data-brand-privacy-mailto use BRAND.privacyEmail
 // (data-protection / legal / technical). Legal footer text and Organization
 // JSON-LD stay static in each page for robustness.
+// TEMPORARY: BRAND.email points to r.nash1 instead of h.nash1 while
+// Helen's inbox is unreachable. Revert when access is restored.
+// Tracked in async-digital-ltd/audient-site#25.
 window.BRAND = Object.freeze({
-  email: "h.nash1@async-digital.com",
+  email: "r.nash1@async-digital.com",
   privacyEmail: "r.nash1@async-digital.com",
   companyName: "Async Digital Ltd",
   companyNumber: "16950485",
