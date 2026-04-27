@@ -1,14 +1,12 @@
 // Source of truth for Async Digital brand constants loaded by every page
 // across async-digital.com and demo.async-digital.com. Mailto links marked
-// with data-brand-mailto use BRAND.email (general / sales / support);
+// with data-brand-mailto use BRAND.email (general-enquiries alias);
 // links marked with data-brand-privacy-mailto use BRAND.privacyEmail
-// (data-protection / legal / technical). Legal footer text and Organization
-// JSON-LD stay static in each page for robustness.
-// TEMPORARY: BRAND.email points to r.nash1 instead of h.nash1 while
-// Helen's inbox is unreachable. Revert when access is restored.
-// Tracked in async-digital-ltd/audient-site#25.
+// (data-protection / legal / technical, named accountable contact).
+// Legal footer text and Organization JSON-LD stay static in each page
+// for robustness.
 window.BRAND = Object.freeze({
-  email: "r.nash1@async-digital.com",
+  email: "info@async-digital.com",
   privacyEmail: "r.nash1@async-digital.com",
   companyName: "Async Digital Ltd",
   companyNumber: "16950485",
