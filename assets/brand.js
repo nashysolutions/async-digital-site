@@ -7,7 +7,7 @@
 // for robustness.
 window.BRAND = Object.freeze({
   email: "info@async-digital.com",
-  privacyEmail: "r.nash1@async-digital.com",
+  privacyEmail: "privacy@async-digital.com",
   companyName: "Async Digital Ltd",
   companyNumber: "16950485",
   registeredOffice: "167–169 Great Portland Street, London, W1W 5PF"
