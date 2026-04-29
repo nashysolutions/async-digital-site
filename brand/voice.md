@@ -34,7 +34,7 @@ Three examples, lifted straight from the current site and voice.
 - **Corporate filler.** "Leverage", "synergies", "cutting-edge", "best-in-class", "game-changer", "revolutionary", "seamless", "world-class", "end-to-end solution".
 - **Salesy-bro.** "Smash your numbers", "crush it", "10x", "unlock growth", "dominate".
 - **Condescending-medical.** Don't explain dentistry to dentists. Don't compare missed calls to missed diagnoses.
-- **Vapour-startup.** "AI-powered", "next-generation", "platform" (we're a small automation, not a platform).
+- **Vapour-startup.** "AI-powered", "next-generation", "platform" (Speed to Lead is a focused automation, not a platform).
 - **Personal brand.** "I" almost never appears in public copy. It's "we", even though "we" is currently two people.
 
 ## Vocabulary

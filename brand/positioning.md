@@ -52,7 +52,7 @@ The same test applies to any new service or product:
 2. **Is it an App Store product (or similar) with its own audience?** If yes, it gets a subdomain and becomes a second credibility proof — never a bullet on the main site's service menu.
 3. **Neither?** Don't ship it under Async Digital yet. A third unrelated thing would tip the company from "focused automation shop with a proof product" into "generic agency", which is the specific outcome the one-offering website pivot was chosen to avoid.
 
-The brief gets revisited when the first "neither" case actually arrives. Until then, Async Digital is: *dental-clinic automations, with a shipped App Store product as evidence we can build.*
+The brief gets revisited when the first "neither" case actually arrives. Until then, Async Digital is: *a UK studio that provides automation services — today's lead service is dental-clinic missed-call follow-up, with Audient on the App Store as build-quality evidence.*
 
 ## When in doubt
 

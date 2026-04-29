@@ -381,6 +381,11 @@ main.wrap > .card + .card {
   text-align: center;
 }
 
+.footer-blurb {
+  margin: 0 0 12px;
+  font-size: 13px;
+}
+
 .footer-primary {
   display: flex;
   flex-wrap: wrap;

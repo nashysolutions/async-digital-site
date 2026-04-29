@@ -133,7 +133,7 @@ components:
 
 ## Brand & Style
 
-Async Digital is a small UK automation company. The site sells one thing today: missed-call follow-up for dental clinics. The brand reads as **calm, plain, and clinical-adjacent** — never hyped, never salesy, never vapour-startup. We sit next to a regulated profession.
+Async Digital is a UK studio that provides automation services. The site currently leads with one service: missed-call follow-up for dental clinics. The brand reads as **calm, plain, and clinical-adjacent** — never hyped, never salesy, never vapour-startup. We sit next to a regulated profession.
 
 The visual identity is deliberately warm against a sea of blue-teal dental software. Deep brick (`primary`) plus charcoal navy (`accent`) on a warm off-white background. No gradients, no glassmorphism, no heavy shadows. Soft hairline borders, generous whitespace, single-bar accents under section headings as a visual nod to the logo's parallel-threads motif.
 
