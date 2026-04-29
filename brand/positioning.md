@@ -1,67 +1,64 @@
 # Async Digital — Positioning brief
 
-An internal one-pager for anyone writing copy, decks, posts, or cold email on behalf of Async Digital. It answers one question: **how do we talk about Audient on Async Digital channels without diluting the dental-automation story that Speed to Lead is built on?**
+An internal one-pager for anyone writing copy, decks, posts, or cold email on behalf of Async Digital. It answers one question: **how does each product live on its own subdomain while the apex stays company-level?**
 
-If you're writing public copy and the answer isn't here, default to [`brand/voice.md`](voice.md) and stay on the dental line.
+If you're writing public copy and the answer isn't here, default to [`brand/voice.md`](voice.md).
 
 ## The problem in one paragraph
 
-Async Digital Ltd has two shipping things that live at different layers of the business. Speed to Lead is a **service**: missed-call follow-up automation for dental clinics, billed per clinic, sold on a warm dental channel. Audient is a **product**: a local-first macOS knowledge-base app for knowledge workers (lawyers, researchers, analysts), sold on the App Store. Different customers, different price points, different sales motions. Pointing at them as a menu would read as a two-person agency pretending to be a multi-service studio, and would bury the one story we can back up today.
+Async Digital Ltd builds a small portfolio of software for small businesses. As of 2026-04-29, two things ship: Speed to Lead (missed-call follow-up automation for dental clinics, sold per clinic) and Audient (a macOS app that uses on-device AI to transcribe and search audio and video, sold on the App Store). They have different customers, different price points, different sales motions. Each lives on its own subdomain (`speed-to-lead.async-digital.com`, `audient.async-digital.com`). The apex `async-digital.com` is the studio, not a product page. The risk is the studio collapsing back into "single-product landing with a promo band" because that's the gravity when one product (Speed to Lead) is the active sales focus.
 
 ## The position
 
-**Audient is credibility proof for Async Digital, not a parallel offering.**
+**Async Digital is a UK studio that builds lean automation for small businesses. Each product lives on its own subdomain. The apex is the studio.**
 
-Shipping Audient on the App Store — localised EN + CY, real tests, a full App Store listing — proves that the team behind Speed to Lead can build, ship, and support real software to a public quality bar. That proof is the whole point of mentioning Audient outside its own subdomain. It answers the sceptical clinic owner's unspoken question: *"Can these people actually build what they're selling me?"*
+That's it. The apex describes what kind of company Async Digital is and lists the products with parity. Each product subdomain owns its own pitch, voice register, and audience. The apex doesn't try to be either product's landing page.
 
-Audient earns its mention by being evidence. It doesn't earn a mention as a product a clinic might buy, because no clinic will buy it.
+## Where each surface speaks
 
-## Where Audient shows up
-
-| Surface | Audient's role |
-|---|---|
-| `async-digital.com` homepage | Not mentioned on the fold. May appear in a lower "what we've shipped" or "proof" band. Never in the hero. |
-| `audient.async-digital.com` subdomain | Full-fat product page. This is Audient's home. |
-| "Built with AI" longform post (#44) | Hero example of the AI-first method. Use Audient as the case study, not the pitch. |
-| Clinic pitch deck | Optional single-slide proof point near the end: *"We also ship our own software on the App Store — so you're not the guinea pig."* Never a product slide. |
-| Cold outreach to clinics | Not mentioned. Clinics don't care what's on the App Store. |
-| LinkedIn / press for clinic-side work | Optional one-line credibility tag: *"…the same team that builds Audient"*. |
-| LinkedIn / press for Audient | Full product posture. Don't mention Speed to Lead. |
+| Surface | Voice | What it says |
+|---|---|---|
+| `async-digital.com` apex | Studio voice. Calm, lean, business. | "Software that saves your team time." Lists products with parity. Links to subdomains. Does not pitch either product. |
+| `speed-to-lead.async-digital.com` | Clinic voice. Plain, specific, calm, clinical-adjacent. | Full Speed to Lead pitch. Owns the missed-call story. Does not mention Audient. |
+| `audient.async-digital.com` | Knowledge-worker voice. Plain, more technical, faintly playful. | Full Audient pitch. Does not mention Speed to Lead. |
+| Clinic pitch deck | Clinic voice. | Speed to Lead pitch. Optional one-slide Audient credibility note near the end. |
+| Cold outreach to clinics | Clinic voice. | Speed to Lead only. |
+| LinkedIn / press for clinic-side work | Clinic voice. | Optional one-line tag: *"the same team that builds Audient."* |
+| LinkedIn / press for Audient | Knowledge-worker voice. | Audient as product. Don't cross-sell to clinics. |
+| LinkedIn / press for Async Digital (the studio) | Studio voice. | Both products as portfolio. Apex is the link target. |
 
 ## Guardrails
 
-- **Don't pitch Audient to clinics.** It isn't for them. A dental receptionist is not the target user for a local-first knowledge-base app.
-- **Don't claim Audient is clinical or healthcare software.** It isn't. It doesn't touch patient data, it isn't GDPR-scoped in the same way, and no clinic uses it in production. Describing it as "healthcare-grade" or "used in clinics" would be false, and detectable.
-- **Don't list Audient and Speed to Lead side by side as "our services".** Services go on the agency menu; Audient is a product with its own subdomain. Keeping them on separate surfaces is the whole mechanic.
-- **Don't spin Audient as "AI-powered transcription for dentistry".** There is no dental transcription product. Inventing one to bridge the two offerings collapses the credibility the brief is trying to protect.
-- **Don't let Audient's voice bleed into clinic-facing copy.** Audient is allowed to be more technical and more playful because its audience is non-clinic knowledge workers. Clinic copy stays on the [voice guide](voice.md) — plain, specific, calm, clinical-adjacent.
+- **Don't pitch Speed to Lead on the apex.** It has its own subdomain. The apex names it as a product, links out, and stops there.
+- **Don't pitch Audient on the apex.** Same rule, same reason. The "Coming soon" eyebrow stays until launch but the framing is product-card-equal-weight, not below-the-fold credibility band.
+- **Don't pitch Audient to clinics.** It isn't for them. A dental receptionist is not the target user for an on-device AI transcription tool.
+- **Don't claim Audient is clinical or healthcare software.** It isn't. It doesn't touch patient data, it isn't GDPR-scoped in the same way, and no clinic uses it in production.
+- **Don't list the products as "our services" on the apex.** They're products with their own subdomains, not menu items on an agency page. The apex distinction is studio (us) → products (links out), not service-line cards.
+- **Don't spin Audient as "AI-powered transcription for dentistry".** There is no dental transcription product. Inventing one to bridge offerings collapses the credibility the brief is trying to protect.
+- **Don't let one product's voice bleed into another's surface.** Each subdomain has its own register. The apex has the studio register. Mixing them flattens the distinction the structure is trying to make.
 
 ## How this plays with the voice guide
 
-[`brand/voice.md`](voice.md) already locks *how* Async Digital writes. This brief locks *what* gets mentioned where. Both apply to every surface. In practice:
-
-- On clinic-facing copy, keep voice and omit Audient.
-- On the `asyncdigital` main site and decks, keep voice and mention Audient only as proof.
-- On the `audient` subdomain, Audient gets its own voice register (still plain, still calm, but pitched at knowledge workers instead of dental receptionists).
+[`brand/voice.md`](voice.md) locks *how* Async Digital writes — plain, specific, calm. This brief locks *what* gets said where. Both apply to every surface. The studio voice on the apex is the same voice, scoped to the studio rather than a single product audience.
 
 ## What happens when a third thing ships
 
-The same test applies to any new service or product:
+Same test, slightly extended for the umbrella shape:
 
-1. **Does it fit the dental-automation story?** If yes, it folds into Speed to Lead's positioning and shares the homepage.
-2. **Is it an App Store product (or similar) with its own audience?** If yes, it gets a subdomain and becomes a second credibility proof — never a bullet on the main site's service menu.
-3. **Neither?** Don't ship it under Async Digital yet. A third unrelated thing would tip the company from "focused automation shop with a proof product" into "generic agency", which is the specific outcome the one-offering website pivot was chosen to avoid.
+1. **Does it fit one of the existing product audiences?** If yes, it folds into that subdomain (or extends it).
+2. **Is it a new product with its own audience?** If yes, it gets its own subdomain (`<thing>.async-digital.com`) and joins the apex products list with parity.
+3. **Is it not a product at all** (a service offering, a recurring contract)? Decide before shipping whether it belongs on the apex (as a service-card) or in private sales material only. Default: keep it off public surfaces until there's proof of fit.
 
-The brief gets revisited when the first "neither" case actually arrives. Until then, Async Digital is: *a UK studio that provides automation services — today's lead service is dental-clinic missed-call follow-up, with Audient on the App Store as build-quality evidence.*
+The brief gets revisited when the products list grows past four, or when one product retires.
 
 ## When in doubt
 
-1. Is this a **clinic-facing** surface? Follow the voice guide, don't mention Audient.
-2. Is this a **credibility-answering** surface (investor, press, sceptical prospect)? Use Audient as proof, not as pitch.
-3. Is this an **Audient surface** (subdomain, App Store, dev audience)? Full product voice, no Speed to Lead cross-sell.
+1. **Apex copy?** Studio voice. Don't pitch either product. Link out.
+2. **Subdomain copy?** Product voice for that audience. Don't cross-sell.
+3. **Internal pitch deck or sales call?** Use whichever product the prospect is buying. Optional one-line credibility tag for the other product if it strengthens the pitch.
 
 If it still isn't clear, ask Rob before shipping. The cost of a stale positioning note is worse than a five-minute chat.
 
 ---
 
-_Related: [`brand/voice.md`](voice.md) (how we write), `../BRAND.md` (brand index), `#17` (brand system epic), `#44` ("Built with AI" post — applies this brief), `#43` (audient subdomain landing — applies this brief)._
+_Related: [`brand/voice.md`](voice.md) (how we write), `../BRAND.md` (brand index), `#89` (homepage umbrella refit epic), `#90` (apex refit + foundation sweep), `#91` (CY mirror), `#73` (closed — pre-subdomain reframe, superseded by #89)._

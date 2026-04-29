@@ -133,7 +133,7 @@ components:
 
 ## Brand & Style
 
-Async Digital is a UK studio that provides automation services. The site currently leads with one service: missed-call follow-up for dental clinics. The brand reads as **calm, plain, and clinical-adjacent** — never hyped, never salesy, never vapour-startup. We sit next to a regulated profession.
+Async Digital is a UK studio building lean automation for small businesses. Two products ship today, each on its own subdomain: Speed to Lead (missed-call follow-up for dental clinics) and Audient (on-device AI for macOS). The apex `async-digital.com` is the studio, not a product page — it lists the products with parity and links out. The brand reads as **calm, plain, and lean** — never hyped, never salesy, never vapour-startup. Each product surface flexes its tone for its audience (clinic-facing on `speed-to-lead.async-digital.com`, knowledge-worker on `audient.async-digital.com`); the apex stays in the studio register.
 
 The visual identity is deliberately warm against a sea of blue-teal dental software. Deep brick (`primary`) plus charcoal navy (`accent`) on a warm off-white background. No gradients, no glassmorphism, no heavy shadows. Soft hairline borders, generous whitespace, single-bar accents under section headings as a visual nod to the logo's parallel-threads motif.
 

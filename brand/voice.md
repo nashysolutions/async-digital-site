@@ -6,7 +6,13 @@ If you're editing this file, update it whenever we land on a sharper phrase, cat
 
 ## Who we're writing for
 
-Dental clinic owners, practice managers, and receptionists. Busy, non-technical, sceptical of IT vendors, protective of their patients. They don't care how it works. They care that it works, that it's safe, and that it doesn't make their day harder.
+The studio's audiences split by surface:
+
+- **`async-digital.com` apex.** Small-business owners considering Async Digital as a vendor. Time-poor, results-focused, sceptical of agency-speak.
+- **Speed to Lead surfaces (`speed-to-lead.async-digital.com`, clinic decks, cold outreach).** Dental clinic owners, practice managers, and receptionists. Busy, non-technical, sceptical of IT vendors, protective of their patients. They don't care how it works. They care that it works, that it's safe, and that it doesn't make their day harder.
+- **Audient surfaces (`audient.async-digital.com`, App Store).** Knowledge workers (lawyers, researchers, analysts). Comfortable with tech, allergic to subscriptions and cloud-only tools. Care about privacy and on-device processing.
+
+The voice principles below apply to all three. The audience and customer-naming switch per surface.
 
 ## Voice in five words
 
@@ -18,15 +24,21 @@ Dental clinic owners, practice managers, and receptionists. Busy, non-technical,
 
 ## What we sound like
 
-Three examples, lifted straight from the current site and voice.
+Examples lifted from the current sites. Note which surface each comes from — the studio apex and each product subdomain speak the same voice, but at different scopes (studio vs product) and to different audiences.
 
-**Homepage headline**
+**Apex headline (`async-digital.com`)**
+> Software that saves your team time
+
+**Apex supporting copy (`async-digital.com`)**
+> UK studio building lean automation for small businesses.
+
+**Speed to Lead headline (`speed-to-lead.async-digital.com`)**
 > Stop losing patients to missed calls
 
-**Supporting copy**
-> We help dental clinics follow up with every missed caller automatically, so no enquiry falls through the cracks, even when the phone rings off the hook.
+**Speed to Lead supporting copy (`speed-to-lead.async-digital.com`)**
+> Speed to Lead is a missed-call follow-up service for dental clinics. Every missed caller hears back within seconds with a link to book a callback. No hardware, no new phone line, no patients falling through the cracks.
 
-**Follow-up email (cold)**
+**Follow-up email (cold, clinic-facing)**
 > Hi [name], quick one. We build a small automation that follows up with callers when a clinic's line is busy, and books them a callback. No app, no dashboard, nothing for your team to learn. Worth a ten-minute look?
 
 ## What we don't sound like
@@ -73,7 +85,8 @@ Voice stays the same. Tone moves up and down the dial depending on who's reading
 
 | Context | Tone | Example opener |
 |---|---|---|
-| Homepage / marketing | Confident, direct | "Stop losing patients to missed calls" |
+| Apex / studio marketing | Confident, direct, lean | "Software that saves your team time" |
+| Speed to Lead marketing | Confident, direct, dental-anchored | "Stop losing patients to missed calls" |
 | Cold outreach | Warm, brief, not pushy | "Quick one. We build..." |
 | Onboarding / setup docs | Patient, step-by-step | "Here's what happens next." |
 | Error messages | Apologetic, specific, actionable | "We couldn't send that message. The clinic's number looks wrong. Please check and try again." |
