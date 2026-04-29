@@ -3,11 +3,13 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://async-digital.com/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-29</lastmod>
   </url>
   <url>
     <loc>https://async-digital.com/four-blocker/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/four-blocker/" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/four-blocker/index.cy.html" />
   </url>
   <url>
     <loc>https://async-digital.com/audient/</loc>
@@ -32,5 +34,17 @@
     <lastmod>2026-04-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/audient.html" />
     <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/audient.cy.html" />
+  </url>
+  <url>
+    <loc>https://async-digital.com/privacy/outreach.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/outreach.html" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/outreach.cy.html" />
+  </url>
+  <url>
+    <loc>https://async-digital.com/privacy/speed-to-lead.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/privacy/speed-to-lead.html" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/privacy/speed-to-lead.cy.html" />
   </url>
 </urlset>
