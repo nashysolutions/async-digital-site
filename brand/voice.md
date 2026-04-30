@@ -8,9 +8,9 @@ If you're editing this file, update it whenever we land on a sharper phrase, cat
 
 The studio's audiences split by surface:
 
-- **`async-digital.com` apex.** Small-business owners considering Async Digital as a vendor. Time-poor, results-focused, sceptical of agency-speak.
-- **Speed to Lead surfaces (`speed-to-lead.async-digital.com`, clinic decks, cold outreach).** Dental clinic owners, practice managers, and receptionists. Busy, non-technical, sceptical of IT vendors, protective of their patients. They don't care how it works. They care that it works, that it's safe, and that it doesn't make their day harder.
-- **Audient surfaces (`audient.async-digital.com`, App Store).** Knowledge workers (lawyers, researchers, analysts). Comfortable with tech, allergic to subscriptions and cloud-only tools. Care about privacy and on-device processing.
+- **`async-digital.com` apex.** Dental clinic owners, practice managers, and receptionists evaluating Speed to Lead as the studio's active offering. Same audience as the Speed to Lead subdomain — the apex is the front door to that pitch. Busy, non-technical, sceptical of IT vendors, protective of their patients.
+- **Speed to Lead surfaces (`speed-to-lead.async-digital.com`, clinic decks, cold outreach).** Same audience as the apex, in more depth. They don't care how it works. They care that it works, that it's safe, and that it doesn't make their day harder.
+- **Audient surfaces (`audient.async-digital.com`, App Store).** Knowledge workers (lawyers, researchers, analysts). Comfortable with tech, allergic to subscriptions and cloud-only tools. Care about privacy and on-device processing. Audient is a sibling product on its own subdomain; it isn't pitched on the apex beyond a secondary "also from us" mention.
 
 The voice principles below apply to all three. The audience and customer-naming switch per surface.
 
@@ -27,10 +27,10 @@ The voice principles below apply to all three. The audience and customer-naming 
 Examples lifted from the current sites. Note which surface each comes from — the studio apex and each product subdomain speak the same voice, but at different scopes (studio vs product) and to different audiences.
 
 **Apex headline (`async-digital.com`)**
-> Software that saves your team time
+> Missed-call follow-up for dental clinics
 
 **Apex supporting copy (`async-digital.com`)**
-> UK studio building lean automation for small businesses.
+> We help clinics capture and convert missed calls by building automated follow-up systems.
 
 **Speed to Lead headline (`speed-to-lead.async-digital.com`)**
 > Stop losing patients to missed calls
@@ -85,7 +85,7 @@ Voice stays the same. Tone moves up and down the dial depending on who's reading
 
 | Context | Tone | Example opener |
 |---|---|---|
-| Apex / studio marketing | Confident, direct, lean | "Software that saves your team time" |
+| Apex / studio marketing | Confident, direct, dental-anchored | "Missed-call follow-up for dental clinics" |
 | Speed to Lead marketing | Confident, direct, dental-anchored | "Stop losing patients to missed calls" |
 | Cold outreach | Warm, brief, not pushy | "Quick one. We build..." |
 | Onboarding / setup docs | Patient, step-by-step | "Here's what happens next." |
@@ -122,4 +122,4 @@ If all three, ship it. If not, rewrite.
 
 ---
 
-_Related: `#17` (brand system epic), `#13` (shared `brand.css`), `#15` (footer), `async-digital-website-messaging-pivot` vault note (positioning decisions this guide is built on)._
+_Related: `#17` (brand system epic), `#13` (shared `brand.css`), `#15` (footer), [`brand/positioning.md`](positioning.md) (where each surface speaks)._
