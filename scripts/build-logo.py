@@ -58,6 +58,11 @@ FAVICON_BARS = [
     (25, 41, 70, 18),
     (0, 67, 50, 18),
 ]
+# Centre + scale the bars into a safe zone so circular crops (Google search favicons,
+# rounded-square iOS masks) don't press the artwork against the edge. The bars span
+# x=0..95 and y=15..85; without inset, the leftmost bar's corner sits beyond the
+# inscribed circle of a 100×100 favicon.
+FAVICON_SAFE_ZONE = 0.78
 
 
 @dataclass
@@ -122,7 +127,21 @@ def symbol_svg() -> str:
 
 
 def favicon_mark_svg() -> str:
-    return bars_svg("0 0 100 100", FAVICON_BARS)
+    bbox_x, bbox_w = 0, 95
+    bbox_y, bbox_h = 15, 70
+    s = FAVICON_SAFE_ZONE
+    tx = 50 - (bbox_x + bbox_w / 2) * s
+    ty = 50 - (bbox_y + bbox_h / 2) * s
+    rects = "\n  ".join(
+        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{h / 2}"/>'
+        for (x, y, w, h) in FAVICON_BARS
+    )
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" '
+        f'color="{PRIMARY}" role="img" aria-label="Async Digital">\n'
+        f'  <g fill="currentColor" transform="translate({tx:.4f},{ty:.4f}) scale({s})">\n'
+        f'  {rects}\n  </g>\n</svg>\n'
+    )
 
 
 def _font_metrics(font: TTFont, target_cap: float) -> tuple[float, float, float]:
