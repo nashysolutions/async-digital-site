@@ -1,7 +1,7 @@
 // Sitewide EN/CY language preference handling for async-digital.com.
 //
 // Cooperates with the existing static `<p class="lang-switch">` markup
-// (privacy/, audient/, four-blocker/). When a visitor clicks a language
+// (privacy/, audient/). When a visitor clicks a language
 // link, their choice is stored in localStorage. On subsequent visits to
 // any page that has hreflang alternates, the script redirects to the
 // preferred language if the current page's <html lang> differs.
