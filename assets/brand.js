@@ -1,5 +1,6 @@
 // Source of truth for Async Digital brand constants loaded by every page
-// across async-digital.com and demo.async-digital.com. Mailto links marked
+// across async-digital.com and the sibling subdomains
+// (audient.async-digital.com, speed-to-lead.async-digital.com). Mailto links marked
 // with data-brand-mailto use BRAND.email (general-enquiries alias);
 // links marked with data-brand-privacy-mailto use BRAND.privacyEmail
 // (data-protection / legal / technical, named accountable contact).

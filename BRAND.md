@@ -156,7 +156,7 @@ The three foundation files stay flat inside `brand/`. Applied assets (logo, prin
 
 Two files translate the foundations into code that the site uses at runtime.
 
-- **`assets/brand.css`** ([`#13`](https://github.com/async-digital-ltd/async-digital-site/issues/13)): the colour and type tokens from `brand/colour.md` and `brand/typography.md` as CSS custom properties. Every page in this repo, and every demo page at `demo.async-digital.com`, consumes the same file over HTTPS.
+- **`assets/brand.css`** ([`#13`](https://github.com/async-digital-ltd/async-digital-site/issues/13)): the colour and type tokens from `brand/colour.md` and `brand/typography.md` as CSS custom properties. Every page in this repo, and every page on the sibling subdomains `audient.async-digital.com` and `speed-to-lead.async-digital.com`, consumes the same file over HTTPS.
 - **`assets/brand.js`** ([`#11`](https://github.com/async-digital-ltd/async-digital-site/issues/11)): shared constants the markup can't easily hold. Currently just the contact email, wired via `data-brand-mailto`.
 
 If a brand value changes, the update order is:
@@ -170,7 +170,7 @@ Changing step 3 without steps 1 and 2 leaves the documentation lying. Changing s
 
 ## Versioning and breakage
 
-`brand.css` and `brand.js` are loaded directly from `https://async-digital.com/assets/` by the main site, the demo site, and any future property. There's no semver; every consumer gets the current file.
+`brand.css` and `brand.js` are loaded directly from `https://async-digital.com/assets/` by the main site, the sibling subdomains (`audient.async-digital.com`, `speed-to-lead.async-digital.com`), and any future property. There's no semver; every consumer gets the current file.
 
 Two implications:
 
