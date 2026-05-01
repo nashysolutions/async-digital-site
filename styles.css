@@ -703,6 +703,15 @@ main.wrap > .card + .card {
   font-size: 18px;
   font-weight: var(--weight-bold);
   letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.audient-mark {
+  display: block;
+  flex-shrink: 0;
+  border-radius: 4px;
 }
 
 .ship-card__pill {
@@ -722,15 +731,47 @@ main.wrap > .card + .card {
   line-height: var(--lh-relaxed);
 }
 
+.ship-card__foot {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .ship-card__cta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 16px;
   color: var(--primary);
   font-weight: var(--weight-medium);
   font-size: var(--size-small);
   letter-spacing: 0.01em;
+}
+
+.ai-badge {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: var(--weight-medium);
+  color: var(--text);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
 }
 
 /* Two-column section (contact + company) */
