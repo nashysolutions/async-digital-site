@@ -125,6 +125,19 @@ body {
   backdrop-filter: blur(6px);
 }
 
+/* Apex homepage: collapse the dead space between the hero pills and the
+   first content section so the page reads as one continuous rhythm.
+   Other pages keep the standard .wrap padding for top breathing room. */
+body.home .hero {
+  padding-bottom: 8px;
+}
+body.home main.wrap {
+  padding-top: 24px;
+}
+body.home main.wrap > .section:first-of-type {
+  margin-top: 16px;
+}
+
 /* ---------- Sections ---------- */
 
 .section {
