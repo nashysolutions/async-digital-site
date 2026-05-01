@@ -8,6 +8,12 @@
     <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/index.cy.html" />
   </url>
   <url>
+    <loc>https://async-digital.com/about/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/about/" />
+    <xhtml:link rel="alternate" hreflang="cy" href="https://async-digital.com/about/index.cy.html" />
+  </url>
+  <url>
     <loc>https://async-digital.com/audient/</loc>
     <lastmod>2026-04-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://async-digital.com/audient/" />
