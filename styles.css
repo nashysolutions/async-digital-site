@@ -105,26 +105,6 @@ body {
   border-bottom-color: rgba(0,0,0,0.18);
 }
 
-.signals {
-  margin: 18px auto 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 10px 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: var(--muted);
-  font-size: var(--size-small);
-}
-
-.signals li {
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,0.02);
-  border-radius: 999px;
-  backdrop-filter: blur(6px);
-}
-
 /* ---------- Sections ---------- */
 
 .section {
@@ -625,13 +605,6 @@ main.wrap > .card + .card {
   color: var(--muted);
   max-width: 60ch;
   text-wrap: pretty;
-}
-
-.about-page .signals {
-  margin-top: 26px;
-  margin-left: 0;
-  margin-right: 0;
-  justify-content: flex-start;
 }
 
 .about-section { margin-top: clamp(56px, 8vw, 88px); }

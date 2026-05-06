@@ -192,7 +192,6 @@ The current vocabulary is small — this is a marketing site, not an app. Each c
 - **`button`** (`.button`) — single CTA shape. Brick background, white text, 10px radius, hover lifts -1px with a soft shadow, focus ring at 35% primary. Don't add a secondary button style without a copy reason; an underlined link is the secondary CTA.
 - **`card` / `tile`** (`.card`, `.tile`) — content containers on the warm `card` surface with hairline border. 16px radius, 22px padding. Use for grouped content; don't nest.
 - **`step`** (`.step`) — numbered process container. Same shape as card but on the page `bg` so a sequence reads as ordered work, not parallel options.
-- **`signal-pill`** (`.signals li`) — small bordered pill for trust signals (location, company number). Muted text, near-transparent fill, hairline border, full-rounded.
 - **`link`** (`.link`, `.tile a`, footer links) — text-coloured with a 1px `border`-coloured underline that darkens on hover. **No coloured links.** Use the button when you need primary action.
 - **`section-accent-bar`** — 3px × 52px primary-coloured pill under each section H2 (`section h2::after`). The site's only repeating brand flourish — ship one per section, don't echo it elsewhere on the page.
 - **`card-grid`** (`.grid.cards`) — three-column wrapper for `card` or `tile` children. Collapses to one column ≤ 900px. Variants: `.grid.work` for work-sample tiles, `.steps` for ordered numbered-process containers (uses `step` rather than `card`).
